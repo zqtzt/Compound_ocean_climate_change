@@ -20,7 +20,7 @@ Contributors: Lijing Cheng, Karina von Schuckmann, Sabrina Speich, Laurent Bopp,
 
 
 
-## 2. Codes for reproduce the main text figures
+## 2. Codes of reproduction the main text figures
 
 ### 2.1 Codes for Fig. 1 (Time of emergence figures)
 
@@ -28,7 +28,7 @@ Contributors: Lijing Cheng, Karina von Schuckmann, Sabrina Speich, Laurent Bopp,
 
 Working folder: `Codes_Fig1`
 
-Input data are storaged in ` ./Codes_Fig1/ToE_data`
+Input data are stored in ` ./Codes_Fig1/ToE_data`
 
 Simply run `plot_Fig1a.m` with MATLAB.
 
@@ -36,7 +36,7 @@ Simply run `plot_Fig1a.m` with MATLAB.
 
 Working folder: `Codes_Fig1`
 
-Input data are storaged in ` ./Codes_Fig1/ToE_data`
+Input data are stored in ` ./Codes_Fig1/ToE_data`
 
 Simply run `plot_Fig1b.m` with MATLAB.
 
@@ -64,9 +64,9 @@ Simply run `plot_Fig1d.m` with MATLAB.
 
 Working folder: `Codes_Fig2`
 
-Input data are storaged in ` ./Codes_Fig2/Input_data/`
+Input data are stored in ` ./Codes_Fig2/Input_data/`
 
-Simply run `plot_Fig2a.py` or `plot_Fig2a.ipynb` (with Jupyter Notebook) under the installation of Python 3.8 .
+Simply run `plot_Fig2a.py` or `plot_Fig2a.ipynb` (with Jupyter Notebook) under the installation of Python 3.8.
 
 #### (2) Fig. 2B
 
@@ -146,19 +146,38 @@ Simply run `plot_Fig5c.m` with MATLAB.
 
 
 
-## 3. Demo for calculating the time of emergency (ToE)
+## 3. Demo for estimating the time of emergency (ToE)
 
-Here, take temperature emergence as a demo, we provide some codes to calculate its individual ToE, as presented in the manuscript.
+###### Here, take temperature emergence as a demo, we provide some codes to calculate its individual ToE, as presented in the manuscript.
 
-We used the IAP temperature 1-degree gridded product (the analysis mean field) as the input data, which can be assessed via http://dx.doi.org/10.12157/IOCAS.20240117.002 or http://www.ocean.iap.ac.cn/
+We used the IAPv3 temperature 1-degree gridded product (the analysis mean field) as the input data, which can be assessed via  http://www.ocean.iap.ac.cn/
 
+Working folder: `demo_individual_ToE`
 
+Input data are storaged in ` ./demo_individual_ToE/Input_data`
+
+Some internal functions for used are available in  ` ./demo_individual_ToE/functions` 
+
+#### **Running order**
+
+1. `N01_cal_baseline.m`: This is to calculate the 1960-1979 climatology (baseline). Here, the input data is the IAPv3 1-degree grid dataset from 1960 to 2021 (monthly netCDF format).  **Due to the data storage limitation in GitHub, you should download the netCDf format data on your own via  http://www.ocean.iap.ac.cn/.**
+2. `N02_anomaly_monthly.m`: This is to calculate the anomaly field relative to 1960-1979 baseline
+3. `N03_gloal_avg_temp.m`: This is to calculate the global temperature 3-D average and its time series
+4. `N04_global_singal_noise.m`: This is to calculate the global average signal (G(t)) and noise
+5. `N05_local_singal_noise.m`: This is to calculate the local signal and noise in each 1-degree box at each standard depth level following Hawkins et al., 2020
+6. `N06_ToE_calculate.m`: This is to calculate the temperature ToE in each 1-degree box (each standard depth level, epipelagic zone, and mesopelagic zone). We also provide some codes for plotting the spatial ToE maps.
+7. `N07_ToE_depth_percentage.m`: This is to calculate the global percentage of temperature emergence as a function of depth
+8. `N08_ToE_year_percentage_upper2001000.m`: This is to calculate the global percentage of temperature emergence as a function of year
+
+> **Note: If you don't download the full IAP data, you can run this demo from the Step 6.**
 
 
 
 ## License
 
 These codes are licensed under the [MIT License](https://github.com/zqtzt/Compound_ocean_climate_change?tab=MIT-1-ov-file#readme)
+
+
 
 ## Questions and feedbacks
 
