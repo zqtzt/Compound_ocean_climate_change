@@ -1,6 +1,6 @@
 # Codes and demos: manuscript of 'Large-scale and deep compound change of the ocean state triggered by global warming'
 
-##### **Below are the codes to reproduce the results presented in the manuscripts entitled 'Large-scale and deep compound change of the ocean state triggered by global warming' by Tan et al. submitted to Nature**
+#### **Below are the codes to reproduce the results presented in the manuscripts entitled 'Large-scale and deep compound change of the ocean state triggered by global warming' by Tan et al. submitted to Nature**
 
 Author: Zhetao Tan (tanzhetao19@mails.ucas.ac.cn)
 
@@ -114,7 +114,7 @@ Please run the followings script  `plot_Fig3c.py` or `plot_Fig3c.ipynb` (with Ju
 
 
 
-### 2.4 Codes for Fig. 5 (compound effects)
+### 2.4 Codes for Fig. 5 (compound effects figures)
 
 #### (1) Fig. 5A
 
@@ -142,7 +142,8 @@ Please run the followings script  `plot_Fig5c.m` with MATLAB.
 
 
 
-###### Note: The Box 1 Figure and Fig. 4 are schematic (conceptual illustrations). The codes for these two figures can be obtained upon request
+> ##### Note: The Box 1 Figure and Fig. 4 are schematic (conceptual illustrations). The codes for these two figures can be obtained upon request
+>
 
 
 
@@ -169,7 +170,7 @@ Some internal functions for used are available in  ` ./demo_individual_ToE/funct
 7. `N07_ToE_depth_percentage.m`: This is to calculate the global percentage of temperature emergence as a function of depth
 8. `N08_ToE_year_percentage_upper2001000.m`: This is to calculate the global percentage of temperature emergence as a function of year
 
-> **Note: If you don't download the full IAP dataset, you can run this demo from the Step 6.**
+> ###### **Note: If you don't download the full IAP dataset, you can run this demo from the Step 6.**
 
 
 
