@@ -10,80 +10,139 @@ Contributors: Lijing Cheng, Karina von Schuckmann, Sabrina Speich, Laurent Bopp,
 
 ## 1. System and software requirements
 
-- MATLAB
+- MATLAB (>R2020a)
 - Python 3.8 
-  - numpy
-  - scipy
-  - netCDF4
-  - ??
+  - numpy (version: >= 1.24.3)
+  - scipy  (version: >= 1.10.1)
+  - cartopy (version: >= 0.21.1)
+  - matplotlib (version: >= 3.7.2)
+  - seaborn (version: >= 0.12.2)
 
 
 
 ## 2. Codes for reproduce the main text figures
 
-### 2.1 Codes for Fig. 1
+### 2.1 Codes for Fig. 1 (Time of emergence figures)
 
-#### (1) Fig. 1a
+#### (1) Fig. 1A
 
-Folders ....
+Working folder: `Codes_Fig1`
 
-Input data: filenames....
+Input data are storaged in ` ./Codes_Fig1/ToE_data`
 
-Brief instructions on how to run:
+Simply run `plot_Fig1a.m` with MATLAB.
 
-#### (2) Fig. 1b
+#### (2) Fig. 1B
 
+Working folder: `Codes_Fig1`
 
+Input data are storaged in ` ./Codes_Fig1/ToE_data`
 
-#### (3) Fig. 1c
+Simply run `plot_Fig1b.m` with MATLAB.
 
+#### (3) Fig. 1C
 
+Working folder: `Codes_Fig1`
 
-#### (4) Fig. 1d
+Input data are storaged in ` ./Codes_Fig1/ToE_data`
 
+Simply run `plot_Fig1c.m` with MATLAB.
 
+#### (4) Fig. 1D
 
-### 2.2 Codes for Fig. 2
+Working folder: `Codes_Fig1`
 
-Folders ....
+Input data are storaged in ` ./Codes_Fig1/ToE_data`
 
-Input data: filenames....
-
-Brief instructions on how to run:
-
-
-
-
-
-### 2.3 Codes for Fig. 3
+Simply run `plot_Fig1d.m` with MATLAB.
 
 
 
+### 2.2 Codes for Fig. 2 (Time of emergence figures)
+
+#### (1) Fig. 2A
+
+Working folder: `Codes_Fig2`
+
+Input data are storaged in ` ./Codes_Fig2/Input_data/`
+
+Simply run `plot_Fig2a.py` or `plot_Fig2a.ipynb` (with Jupyter Notebook) under the installation of Python 3.8 .
+
+#### (2) Fig. 2B
+
+Working folder: `Codes_Fig2`
+
+Input data are storaged in ` ./Codes_Fig2/Input_data/`
+
+Simply run `plot_Fig2b.py` or `plot_Fig2b.ipynb` (with Jupyter Notebook) under the installation of Python 3.8 .
+
+#### (3) Fig. 2C
+
+Working folder: `Codes_Fig2`
+
+Input data are storaged in ` ./Codes_Fig2/Input_data/`
+
+Simply run `plot_Fig2c.py` or `plot_Fig2c.ipynb` (with Jupyter Notebook) under the installation of Python 3.8 .
 
 
-### 2.4 Codes for Fig. 5
 
-#### (1) Fig. 5a
+### 2.3 Codes for Fig. 3  (Exposure figures)
+
+#### (1) Fig. 3A
+
+Working folder: `Codes_Fig3`
+
+Input data are storaged in ` ./Codes_Fig3/Input_data/`
+
+Simply run `plot_Fig3a.py` or `plot_Fig3a.ipynb` (with Jupyter Notebook) under the installation of Python 3.8.
+
+#### (2) Fig. 3B
+
+Working folder: `Codes_Fig3`
+
+Input data are storaged in ` ./Codes_Fig3/Input_data/`
+
+Simply run `plot_Fig3b.py` or `plot_Fig3b.ipynb` (with Jupyter Notebook) under the installation of Python 3.8.
+
+#### (3) Fig. 3C
+
+Working folder: `Codes_Fig3`
+
+Input data are storaged in ` ./Codes_Fig3/Input_data/`
+
+Simply run `plot_Fig3c.py` or `plot_Fig3c.ipynb` (with Jupyter Notebook) under the installation of Python 3.8.
 
 
 
+### 2.4 Codes for Fig. 5 (compound effects)
+
+#### (1) Fig. 5A
+
+Working folder: `Codes_Fig5`
+
+Input data are storaged in ` ./Codes_Fig5/Input_data/`
+
+Simply run `plot_Fig5a.py` or `plot_Fig5a.ipynb` (with Jupyter Notebook) under the installation of Python 3.8.
+
+#### (2) Fig. 5B
+
+Working folder: `Codes_Fig5`
+
+Input data are storaged in ` ./Codes_Fig5/Input_data/`
+
+Simply run `plot_Fig5b.py` or `plot_Fig5b.ipynb` (with Jupyter Notebook) under the installation of Python 3.8.
+
+#### (3) Fig. 5C
+
+Working folder: `Codes_Fig5`
+
+Input data are storaged in ` ./Codes_Fig5/Input_data`
+
+Simply run `plot_Fig5c.m` with MATLAB.
 
 
-#### (2) Fig. 5b
 
-
-
-
-
-#### (3) Fig. 5c
-
-
-
-
-
-Note: The Box 1 Figure and Fig. 4 are the schematic illustration or the conceptual illustration. The codes for these two figures can be upon request to the corresponding authors.
-
-
+###### Note: The Box 1 Figure and Fig. 4 are the schematic illustration or the conceptual illustration. The codes for these two figures can be upon request to the author.
 
 
 
@@ -91,7 +150,7 @@ Note: The Box 1 Figure and Fig. 4 are the schematic illustration or the conceptu
 
 Here, take temperature emergence as a demo, we provide some codes to calculate its individual ToE, as presented in the manuscript.
 
-We used the IAP temperature 1-degree gridded product (the analysis mean field) as the input data, where can be assessed via http://dx.doi.org/10.12157/IOCAS.20240117.002 or http://www.ocean.iap.ac.cn/
+We used the IAP temperature 1-degree gridded product (the analysis mean field) as the input data, which can be assessed via http://dx.doi.org/10.12157/IOCAS.20240117.002 or http://www.ocean.iap.ac.cn/
 
 
 
