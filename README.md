@@ -178,7 +178,6 @@ Some internal functions for used are available in  ` ./demo_individual_ToE/funct
 
 ###### Here, taking triple emergence (temperature & salinity & dissolved oxygen) in the epipelagic zone (0-200m) as an example, we provide the codes to calculate its compound emergence, as presented in the manuscript.
 
-We used the IAPv3 temperature 1-degree gridded product (the analysis mean field) as the input data, which can be assessed via  http://www.ocean.iap.ac.cn/
 
 Working folder: `demo_compound_CIDs_ToE`
 
