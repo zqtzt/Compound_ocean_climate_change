@@ -38,7 +38,7 @@ Contributors: Lijing Cheng, Karina von Schuckmann, Sabrina Speich, Laurent Bopp,
 
 We also provide **a dynamic view** of the compound climatic impact-drivers (Temperature, salinity, dissolved oxygen, and surface pH) from 1980 to 2023, which are represented by the compound time-of-emergence and its exposure. You can find the evolution video in this folder `./dynamic_video/` or via [http://www.ocean.iap.ac.cn/ftp/cheng/Compound_CIDs/dynamic_video/](http://www.ocean.iap.ac.cn/ftp/cheng/Compound_CIDs/dynamic_video/)
 
-This video is produced by using the codes in `Section 2.2` and `Setion 2.3`
+This video is produced by using the codes in `Section 2.3` and `Section 2.4`
 
 We also provide **a dashboard to show the dynamic evolution** (since 1980) of compound CIDs here: [http://www.ocean.iap.ac.cn/](http://www.ocean.iap.ac.cn/)
 
