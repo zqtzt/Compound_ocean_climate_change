@@ -10,16 +10,18 @@ depth_std=ncread([path,'CAS_v1_2000m_year_1960_month_01.nc'],'depth_std');
 lat=ncread([path,'CAS_v1_2000m_year_1960_month_01.nc'],'lat');
 lon=ncread([path,'CAS_v1_2000m_year_1960_month_01.nc'],'lon');
 
+mkdir ./temp_anomaly_monthly_1960_1989
+
 for month=1:12
     month
-    eval(['load ./clim_1960_1979/CAS_1960_1979_clim_month',num2str(month),'.mat temp_clim_monthly'])
+    eval(['load ./clim_1960_1989/CAS_1960_1989_clim_month',num2str(month),'.mat temp_clim_monthly'])
     
-    for year=1960:2021
+    for year=1960:2023
         filename=[path,'CAS_v1_2000m_year_',num2str(year),'_month_',num2str(month,'%02d'),'.nc'];
         temp=ncread(filename,'temp');
         
         temp_anomaly=temp-temp_clim_monthly;
-        filename=['./temp_anomaly_monthly_1960_1979/CAS_2000m_year_',num2str(year),'_month_',num2str(month,'%02d'),'.mat'];
+        filename=['./temp_anomaly_monthly_1960_1989/CAS_2000m_year_',num2str(year),'_month_',num2str(month,'%02d'),'.mat'];
         eval(['save ',filename,' temp_anomaly lat lon depth_std'])
         clear temp
     end
@@ -28,12 +30,12 @@ end
 %%  put anomaly data into a 'large' array 360*180*41*744;
 clear
 
-xt=linspace(1960,2022,745);
+xt=linspace(1960,2024,769);
 xt(end)=[];
-temp_anomaly_all=single(NaN(360,180,41,744));
+temp_anomaly_all=single(NaN(360,180,41,769));
 
 m=1;
-for year=1960:2021
+for year=1960:2023
     year
     for month=1:12
         filename=['./temp_anomaly_monthly_1960_1979/CAS_2000m_year_',num2str(year),'_month_',num2str(month,'%02d'),'.mat'];
@@ -52,21 +54,21 @@ save temp_monthly_anomaly_data_baseline1960_1979.mat temp_anomaly_all lon lat de
 %% calculate depth average 0 0-200m 200-1000m
 clear
 
-%%%%% This is the path to storage the IAPv3 1-degree grid datasets from 1960 to 2021 in monthly netCDF format
+%%%%% This is the path to storage the IAPv3 1-degree grid datasets from 1960 to 2023 in monthly netCDF format
 path='D:\QC_OHC_uncertainty\OHC_cal_QCpapers\CAS_v1_temp_monthly_netCDF_CODCQC_XBTMBTBOTcor_20221229\';
 depth_std=ncread([path,'CAS_v1_2000m_year_1960_month_01.nc'],'depth_std');
 
-xt=linspace(1960,2021,745);
+xt=linspace(1960,2024,769);
 xt(end)=[];
-T_upper200_monthly_anomaly=single(NaN(360,180,744));
-T_upper200_1000_monthly_anomaly=single(NaN(360,180,744));
+T_upper200_monthly_anomaly=single(NaN(360,180,768));
+T_upper200_1000_monthly_anomaly=single(NaN(360,180,768));
 
 m=1;
-for year=1960:2021
+for year=1960:2023
     year
     for month=1:12
         month
-        filename=['./temp_anomaly_monthly_1960_1979/CAS_2000m_year_',num2str(year),'_month_',num2str(month,'%02d'),'.mat'];
+        filename=['./temp_anomaly_monthly_1960_1989/CAS_2000m_year_',num2str(year),'_month_',num2str(month,'%02d'),'.mat'];
         load(filename)
         temp_anomaly=permute(temp_anomaly,[2,3,1]);
         
@@ -85,4 +87,4 @@ for year=1960:2021
         m=m+1;
     end
 end
-save temp_monthly_anomaly_upper20010002000_baseline1960_1979.mat T_upper2000_monthly_anomaly T_upper200_monthly_anomaly T_upper200_1000_monthly_anomaly lon lat xt depth_std
+save temp_monthly_anomaly_upper20010002000_baseline1960_1989.mat T_upper2000_monthly_anomaly T_upper200_monthly_anomaly T_upper200_1000_monthly_anomaly lon lat xt depth_std

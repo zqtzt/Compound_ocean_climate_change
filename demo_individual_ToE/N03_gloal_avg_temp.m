@@ -2,7 +2,7 @@
 clear
 clc
 
-path='./temp_anomaly_monthly_1960_1979/';
+path='./temp_anomaly_monthly_1960_1989/';
 
 files=dir(path);
 files([files.isdir])=[];
@@ -36,7 +36,7 @@ for m=1:length(files)
     end
 
 end
-xt=linspace(1960,2022,745);
+xt=linspace(1960,2024,769);
 xt(end)=[];
 T_global_SST_smooth=smooth(xt,T_global_level(:,1),25*12,'lowess',2);
 T_global_upper200_1000_smooth=smooth(xt,T_global_upper200_1000,25*12,'lowess',2);
@@ -46,7 +46,7 @@ save T_global_avg_baseline1960_1979.mat T_global_upper200 T_global_upper200_1000
 
 
 %% each level
-xt=linspace(1960,2022,745);
+xt=linspace(1960,2024,769);
 xt(end)=[];
 for k=1:41
     T_global_level_smooth(:,k)=smooth(xt,T_global_level(:,k),25*12,'lowess',2);
@@ -62,6 +62,6 @@ for k=1:41
     ylabel('Temperature anomaly (^oC)')
     title(['Global average temperature ',num2str(depth_std(k)),'m'])
     plot_setting(1)
-    xlim([1960 2021])
+    xlim([1960 2023])
     saveas(gcf,['./pics/level_timeseries/global_SC_',num2str(depth_std(k)),'m_baseline1960_1979.png'])
 end

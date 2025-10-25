@@ -2,7 +2,7 @@
 clear
 clc
 
-load temp_monthly_anomaly_data_baseline1960_1979.mat
+load temp_monthly_anomaly_data_baseline1960_1989.mat
 load global_SN_level.mat
 size(temp_anomaly_all)
 
@@ -50,7 +50,7 @@ clear
 clc
 
 load global_SN_level.mat
-load temp_monthly_anomaly_upper20010002000_baseline1960_1979.mat
+load temp_monthly_anomaly_upper20010002000_baseline1960_1989.mat
 
 aerfa_regress_200=NaN(360,180);
 signal_200=NaN(360,180);
@@ -60,18 +60,18 @@ aerfa_regress_200_1000=NaN(360,180);
 signal_200_1000=NaN(360,180);
 noise_200_1000=NaN(360,180);
 
-xt=linspace(1960,2021,745);
+xt=linspace(1960,2024,769);
 xt(end)=[];
 T_global_upper200_smooth=smooth(xt,T_global_upper200,25*12,'lowess',2);
-avg_2021=nanmean(T_global_upper200_smooth((2021-1960)*12+1:(2022-1960)*12));  %2021年全球上层700米信号
+avg_2021=nanmean(T_global_upper200_smooth((2023-1960)*12+1:(2024-1960)*12));  %2021年全球上层700米信号
 global_T_signal_upper200=avg_2021;
 
 T_global_upper2000_smooth=smooth(xt,T_global_upper2000,25*12,'lowess',2);
-avg_2021=nanmean(T_global_upper2000_smooth((2021-1960)*12+1:(2022-1960)*12));  %2021年全球上层700米信号
+avg_2021=nanmean(T_global_upper2000_smooth((2023-1960)*12+1:(2024-1960)*12));  %2021年全球上层700米信号
 global_T_signal_upper2000=avg_2021;
 
 T_global_upper200_1000_smooth=smooth(xt,T_global_upper200_1000,25*12,'lowess',2);
-avg_2021=nanmean(T_global_upper200_1000_smooth((2021-1960)*12+1:(2022-1960)*12));  %2021年全球上层700米信号
+avg_2021=nanmean(T_global_upper200_1000_smooth((2023-1960)*12+1:(2024-1960)*12));  %2021年全球上层700米信号
 global_T_signal_upper200_1000=avg_2021;
 
 %%%%%%%%upper200-1000m (mesopelagic zone)
