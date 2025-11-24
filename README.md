@@ -1,18 +1,24 @@
 # Datasets, Codes, and Demos: paper of 'Observed large-scale and deep-reaching compound ocean state changes over the past 60 years'
 
-#### **Below are the codes to reproduce the results presented in the paper entitled 'Observed large-scale and deep-reaching compound ocean state changes over the past 60 years' by Tan et al. 2025 published in *Nature Climate Change***
+#### **Below are the codes to reproduce the results presented in the paper entitled 'Observed large-scale and deep-reaching compound ocean state changes over the past 60 years' by Tan et al. 2025 published in *Nature Climate Change***. [https://www.nature.com/articles/s41558-025-02484-x](https://www.nature.com/articles/s41558-025-02484-x)
 
 Author: Zhetao Tan (tanzhetao19@mails.ucas.ac.cn; zhetao.tan@lmd.ipsl.fr)
 
 Contributors: Lijing Cheng, Karina von Schuckmann, Sabrina Speich, Laurent Bopp, Jiang Zhu
 
-**Dashboard**: A dashboard is available [here](http://www.ocean.iap.ac.cn/pages/dataV/dataV.html?navAnchor=dataV) to **enable the climate scientists and climate policy-makers** to check the dynamic evolution (since 1985) and current state of the simultaneous change in the global ocean.
+
+
+🎥 **Dashboard**: A dashboard is available [here](http://www.ocean.iap.ac.cn/pages/dataV/dataV.html?navAnchor=dataV) to <span style="color:#058120;">**enable the climate scientists and climate policy-makers**</span> to check the dynamic evolution (since 1985) and current state of the simultaneous change in the global ocean.
+
+**▶️ Video**: an evolution of the <span style="color:#058120;">**changing compound CIDs (ToE and its exposure) from 1980 to 2023**</span> can be reached [here](http://www.ocean.iap.ac.cn/ftp/cheng/Compound_CIDs/dynamic_video/) 
+
+♻️ More information and useful materials could be found on my personal [webpage](https://zqtzt.github.io/)
 
 # 1. Dataset: IAP Compound CIDs Dataset
 
 ## 1.1 Introduction
 
-**The IAP Ocean Compound Climatic impact-drivers (CIDs) Monitoring Dataset** integrates global, three-dimensional observations of physical and biogeochemical variables to capture long-term, compound ocean state changes with global coverage (1-degree) from the surface to mesopelagic zone. This dataset, combining time-of-emergence (ToE) analyses and exposure metrices from 1960 to 2023 for the concurrent change of multiple Essential Climate Variables (ECVs) includes ocean temperature, salinity, dissolved oxygen, and surface pH, provides a robust foundation for assessing the interplay between individual and compound CIDs. This dataset, together with the analysis framework shown in the corresponding paper, can servers as a science-policy interface tool and indicators to facilitate the integration of our understanding of oceanic environmental change with broader knowledge of the compound impacts on the ocean and human societies.
+**The IAP Ocean Compound Climatic impact-drivers (CIDs) Monitoring Dataset** integrates global, three-dimensional observations of physical and biogeochemical variables to capture long-term, compound ocean state changes with global coverage (1-degree) from the surface to mesopelagic zone. This dataset, combining time-of-emergence (ToE) analyses and exposure metrics from 1960 to 2023 for the concurrent change of multiple Essential Climate Variables (ECVs) includes ocean temperature, salinity, dissolved oxygen, and surface pH, provides a robust foundation for assessing the interplay between individual and compound CIDs. This dataset, together with the analysis framework shown in the corresponding paper, can server as a science-policy interface tool and indicators to facilitate the integration of our understanding of oceanic environmental change with broader knowledge of the compound impacts on the ocean and human societies.
 
 ## 1.2 Data Information
 
@@ -40,9 +46,7 @@ We also provide **a dynamic view** of the compound climatic impact-drivers (Temp
 
 This video is produced by using the codes in `Section 2.3` and `Section 2.4`
 
-We also provide **a dashboard to show the dynamic evolution** (since 1980) of compound CIDs here: [http://www.ocean.iap.ac.cn/](http://www.ocean.iap.ac.cn/)
-
-
+We also provide **a dashboard to show the dynamic evolution** (since 1985) of compound CIDs here: [http://www.ocean.iap.ac.cn/pages/dataV/dataV.html?navAnchor=dataV](http://www.ocean.iap.ac.cn/pages/dataV/dataV.html?navAnchor=dataV)
 
 # 2. Codes to reproduce the figures
 
@@ -185,4 +189,4 @@ If you have any questions/suggestions about this manuscript, or if you find some
 
 11/03/2024: The initialization to upload the reproduction and demo codes (version 0.1.0)
 
-22/10/2025: Updated version (version 1.0.0)
+25/11/2025: Updated version (version 1.0.0)
