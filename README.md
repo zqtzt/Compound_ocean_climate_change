@@ -8,7 +8,7 @@ Contributors: Lijing Cheng, Karina von Schuckmann, Sabrina Speich, Laurent Bopp,
 
 
 
-🎥 **Dashboard**: A dashboard is available [here](http://www.ocean.iap.ac.cn/pages/dataV/dataV.html?navAnchor=dataV) to <span style="color:#058120;">**enable the climate scientists and climate policy-makers**</span> to check the dynamic evolution (since 1985) and current state of the simultaneous change in the global ocean.
+🎥 **Dashboard**: A dashboard is available [here](https://zqtzt.github.io/compound-cids-dashboard/) <span style="color:#058120;">**enable the climate scientists and climate policy-makers**</span> to check the dynamic evolution (since 1985) and current state of the simultaneous change in the global ocean.
 
 **▶️ Video**: an evolution of the <span style="color:#058120;">**changing compound CIDs (ToE and its exposure) from 1980 to 2023**</span> can be reached [here](http://www.ocean.iap.ac.cn/ftp/cheng/Compound_CIDs/dynamic_video/) 
 
